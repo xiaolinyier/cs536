@@ -1,0 +1,379 @@
+import java_cup.runtime.*; // defines the Symbol class
+
+// The generated scanner will return a Symbol for each token that it finds.
+// A Symbol contains an Object field named value; that field will be of type
+// TokenVal, defined below.
+//
+// A TokenVal object contains the line number on which the token occurs as
+// well as the number of the character on that line that starts the token.
+// Some tokens (literals and IDs) also include the value of the token.
+
+class TokenVal {
+  // fields
+    int linenum;
+    int charnum;
+  // constructor
+    TokenVal(int lnum, int cnum) {
+        linenum = lnum;
+        charnum = cnum;
+    }
+}
+
+class IntLitTokenVal extends TokenVal {
+  // new field: the value of the integer literal
+    int intVal;
+  // constructor
+    IntLitTokenVal(int lnum, int cnum, int val) {
+        super(lnum, cnum);
+        intVal = val;
+    }
+}
+
+class IdTokenVal extends TokenVal {
+  // new field: the value of the identifier
+    String idVal;
+  // constructor
+    IdTokenVal(int lnum, int cnum, String val) {
+        super(lnum, cnum);
+    idVal = val;
+    }
+}
+
+class StrLitTokenVal extends TokenVal {
+  // new field: the value of the string literal
+    String strVal;
+  // constructor
+    StrLitTokenVal(int lnum, int cnum, String val) {
+        super(lnum, cnum);
+        strVal = val;
+    }
+}
+
+// The following class is used to keep track of the character number at which
+// the current token starts on its line.
+class CharNum {
+    static int num=1;
+}
+%%
+
+DIGIT=        [0-9]
+WHITESPACE=   [\040\t]
+PLUSPLUS=     [+][+]
+DIVIDE=       [/]
+EQUALS=       [=][=]
+GREATER=      [>]
+LPAREN=       [(]
+INT=          [i][n][t]
+LESS=         [<]
+MINUS=        [-]
+WRITE=        [<][<]
+RPAREN=       [)]
+NOT=          [!]
+SEMICOLON=    [;]
+AND=          [&][&]
+OR=           [|][|]
+BOOL=         [B][O][O][L]
+COMMA=        [,]
+PLUS=         [+]
+ASSIGN=       [=]
+LESSEQ=       [<][=]
+IF=           [i][f]
+DOT=          [.]
+MINUSMINUS=   [-][-]
+RETURN=       [r][e][t][u][r][n]
+TRUE=         [t][r][u][e]
+LCURLY=       [\{]
+CIN=          [c][i][n]
+VOID=         [v][o][i][d]
+RCURLY=       [}]
+TIMES=        [*]
+ELSE=         [e][l][s][e]  
+COUT=         [c][o][u][t]
+READ=         [>][>]
+NOTEQUALS=    [!][=]
+WHILE=        [w][h][i][l][e]
+GREATEREQ=    [>][=]
+
+FALSE=        [f][a][l][s][e]
+STRUCT=       [s][t][r][u][c][t]
+LETTER=       [a-zA-Z]
+ESCCH=        [nt\"'?\\]
+STRINGCH=     (\\{ESCCH})|[^\n\"\\]
+NOTESCCH=     [^nt\"'?\\]
+NOTESCCHNL=   [^nt\"'?\\\n]
+STRINGLITERAL= \"({STRINGCH})*\"
+
+ID=           ([_]|{LETTER})({LETTER}|{DIGIT}|[_])*
+UBSL=         \"({STRINGCH})*(\\{NOTESCCH})+({STRINGCH})*
+USL=          \"({STRINGCH})*
+BSL=          \"({STRINGCH})*(\\{NOTESCCHNL})+({STRINGCH})*\"
+
+
+%implements java_cup.runtime.Scanner
+%function next_token
+%type java_cup.runtime.Symbol
+
+%eofval{
+return new Symbol(sym.EOF);
+%eofval}
+
+%line
+
+%%
+
+{DIGIT}+  { // NOTE: the following computation of the integer value does NOT
+            //       check for overflow.  This must be changed.
+            int val = 0;
+            try{
+                    val = (new Integer(yytext())).intValue();
+            }catch(Exception e){
+                    val = Integer.MAX_VALUE;
+                    ErrMsg.warn(yyline + 1, CharNum.num, "integer literal too large; using max value");
+                    //correspond to the position of the first character in the string/integer literal
+            }finally{
+                    //val = (new Integer(yytext())).intValue();
+                    Symbol S = new Symbol(sym.INTLITERAL,
+                             new IntLitTokenVal(yyline+1, CharNum.num, val));
+                    CharNum.num += yytext().length();
+                    return S;
+            } 
+          }
+
+\n        { CharNum.num = 1; }
+
+{WHITESPACE}+  { CharNum.num += yytext().length(); }
+
+"+"       { Symbol S = new Symbol(sym.PLUS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+          }
+        
+{PLUSPLUS} { Symbol S = new Symbol(sym.PLUSPLUS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+          }
+
+{DIVIDE}  { Symbol S = new Symbol(sym.DIVIDE, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+
+{EQUALS}  { Symbol S = new Symbol(sym.EQUALS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+          }
+
+{GREATER} { Symbol S = new Symbol(sym.GREATER, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{LPAREN}  { Symbol S = new Symbol(sym.LPAREN, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{INT}     { Symbol S = new Symbol(sym.INT, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=3;
+            return S;
+  
+          }
+
+{LESS}    { Symbol S = new Symbol(sym.LESS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+
+{MINUS}   { Symbol S = new Symbol(sym.MINUS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+
+{WRITE}   { Symbol S = new Symbol(sym.WRITE, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{RPAREN}  { Symbol S = new Symbol(sym.RPAREN, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+
+{NOT}     { Symbol S = new Symbol(sym.NOT, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{SEMICOLON} { Symbol S = new Symbol(sym.SEMICOLON, new TokenVal(yyline+1, CharNum.num));
+              CharNum.num++;
+              return S;
+          }
+{AND}     { Symbol S = new Symbol(sym.AND, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{OR}      { Symbol S = new Symbol(sym.OR, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{BOOL}    { Symbol S = new Symbol(sym.BOOL, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=4;
+            return S;
+  
+          }
+{COMMA}    { Symbol S = new Symbol(sym.COMMA, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{ASSIGN}  { Symbol S = new Symbol(sym.ASSIGN, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{LESSEQ}  { Symbol S = new Symbol(sym.LESSEQ, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{IF}      { Symbol S = new Symbol(sym.IF, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{DOT}    { Symbol S = new Symbol(sym.DOT, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+
+
+{MINUSMINUS}    { Symbol S = new Symbol(sym.MINUSMINUS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{RETURN}    { Symbol S = new Symbol(sym.RETURN, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=6;
+            return S;
+  
+          }
+{TRUE}    { Symbol S = new Symbol(sym.TRUE, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=4;
+            return S;
+  
+          }
+{LCURLY}  { Symbol S = new Symbol(sym.LCURLY, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{CIN}     { Symbol S = new Symbol(sym.CIN, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=3;
+            return S;
+  
+          }
+{VOID}    { Symbol S = new Symbol(sym.VOID, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=4;
+            return S;
+  
+          }
+{RCURLY}    { Symbol S = new Symbol(sym.RCURLY, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+
+{TIMES}    { Symbol S = new Symbol(sym.TIMES, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num++;
+            return S;
+  
+          }
+{ELSE}    { Symbol S = new Symbol(sym.ELSE, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=4;
+            return S;
+  
+          }
+{COUT}    { Symbol S = new Symbol(sym.COUT, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=4;
+            return S;
+  
+          }
+{READ}    { Symbol S = new Symbol(sym.READ, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{NOTEQUALS} { Symbol S = new Symbol(sym.NOTEQUALS, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+{WHILE}    { Symbol S = new Symbol(sym.WHILE, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=5;
+            return S;
+  
+          }
+{GREATEREQ} { Symbol S = new Symbol(sym.GREATEREQ, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=2;
+            return S;
+  
+          }
+
+{FALSE}   { Symbol S = new Symbol(sym.FALSE, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=5;
+            return S;
+  
+          }
+{STRUCT}  { Symbol S = new Symbol(sym.STRUCT, new TokenVal(yyline+1, CharNum.num));
+            CharNum.num+=6;
+            return S;
+  
+          }
+
+{ID}      { 
+            String val = yytext();
+            Symbol S = new Symbol(sym.ID, new IdTokenVal(yyline+1, CharNum.num,val));
+            CharNum.num+= yytext().length();;
+            return S;
+  
+          }
+{STRINGLITERAL} { 
+            String val = yytext();
+            Symbol S = new Symbol(sym.STRINGLITERAL, new StrLitTokenVal(yyline+1, CharNum.num,val));
+            CharNum.num+= yytext().length();
+            return S;
+  
+          }
+((///)|(##)).*  {
+              // comment
+
+          } 
+
+{UBSL}    {
+            ErrMsg.fatal(yyline + 1, CharNum.num, "unterminated string literal with bad escaped character ignored");
+            CharNum.num = 1;
+          }
+
+{USL}     {
+            ErrMsg.fatal(yyline + 1, CharNum.num, "unterminated string literal ignored");
+            CharNum.num = 1;
+          }
+
+{BSL}     {
+            ErrMsg.fatal(yyline + 1, CharNum.num, "string literal with bad escaped character ignored");
+            CharNum.num = 1;
+          }
+
+
+
+.         { ErrMsg.fatal(yyline+1, CharNum.num,
+                         "ignoring illegal character: " + yytext());
+            CharNum.num++;
+          }
