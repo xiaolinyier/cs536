@@ -1,0 +1,85 @@
+//valid struct
+struct st {
+	int validVar;
+};
+
+
+
+// multiple defined struct
+struct st {
+	bool invalidVar;
+};
+
+// valid function 
+void undeclaredNames() {
+	// valid names
+	int val0;
+	bool val2;
+	struct st inst0;
+	
+	// multiple declarations
+	int val0;
+	bool val2;
+	struct st inst0;
+
+	// if statement
+	if(abc) { }
+	if (inst0.undefinedVar) { }
+	
+	// if else statement
+	if(abc) { } else { }
+	if (inst0.undefinedVar) { } else { }
+	
+	// while statement
+	while(abc) { }
+	while (inst0.undefinedVar) { }
+	
+	// repeat statement
+	repeat (abc) { }
+	repeat (inst0.undefinedVar) { }
+
+	// operations then assignment of unkown names
+	val0 = val0 + val1;
+	val0 = val1 + val0;
+	val0 = val0 - val1;
+	val0 = val1 - val0;
+	val0 = val0 * val1;
+	val0 = val1 * val0;
+	val0 = val0 / val1;
+	val0 = val1 / val0;
+	
+	val2 = val0 < val1;
+	val2 = val1 < val0;
+	val2 = val0 > val1;
+	val2 = val1 > val0;
+	val2 = val0 <= val1;
+	val2 = val1 <= val0;
+	val2 = val0 >= val1;
+	val2 = val1 >= val0;
+	val2 = val0 == val1;
+	val2 = val1 == val0;
+	val2 = val0 != val1;
+	val2 = val1 != val0;
+	
+	// unary and write operators
+	val1++;
+	val1--;
+	cout << val1;
+	cin >> val1;
+
+	// bools
+	val2 = val2 && val3;
+	val2 = val3 && val2;
+	val2 = val2 || val3;
+	val2 = val3 || val2;
+	val2 = !val3;
+	
+	// test in funciton call
+	undeclaredNames(val1);
+	undeclaredNames(inst0.val);
+}
+
+// redeclare function
+void undeclaredNames() {
+
+}

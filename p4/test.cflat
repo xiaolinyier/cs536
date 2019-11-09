@@ -1,0 +1,109 @@
+struct point {
+	int x;
+	int y;
+};
+
+int manhattanDist(int ax, int ay, int bx, int by) {
+	return ax - bx + ay - by;
+}
+
+int main() {
+	struct point a;
+	struct point b;
+
+	cin >> a.x;
+	cin >> a.y;
+	cin >> b.x;
+	cin >> b.y;
+}
+
+// in class example
+
+struct Point {
+    int x;
+    int y;
+};
+
+int f(int x, bool b) { }
+void g() {
+    int a;
+    bool b;
+    struct Point p;
+    p.x = a;
+    b = a == 3;
+    f(a + p.y*2, b);
+    g();
+}
+
+//valid struct
+struct st {
+	int validVar;
+};
+
+// valid function 
+void undeclaredNames() {
+	// valid names
+	int val0;
+	int val1;
+	bool val2;
+	bool val3;
+	struct st inst0;
+	
+	bool abc;
+	
+	// if statement
+	if(abc) { }
+	if (inst0.validVar) { }
+	
+	// if else statement
+	if(abc) { } else { }
+	if (inst0.validVar) { } else { }
+	
+	// while statement
+	while(abc) { }
+	while (inst0.validVar) { }
+	
+	// repeat statement
+	repeat (abc) { }
+	repeat (inst0.validVar) { }
+
+	// operations then assignment of unkown names
+	val0 = val0 + val1;
+	val0 = val1 + val0;
+	val0 = val0 - val1;
+	val0 = val1 - val0;
+	val0 = val0 * val1;
+	val0 = val1 * val0;
+	val0 = val0 / val1;
+	val0 = val1 / val0;
+	
+	val2 = val0 < val1;
+	val2 = val1 < val0;
+	val2 = val0 > val1;
+	val2 = val1 > val0;
+	val2 = val0 <= val1;
+	val2 = val1 <= val0;
+	val2 = val0 >= val1;
+	val2 = val1 >= val0;
+	val2 = val0 == val1;
+	val2 = val1 == val0;
+	val2 = val0 != val1;
+	val2 = val1 != val0;
+	
+	// unary and write operators
+	val1++;
+	val1--;
+	cout << val1;
+	cin >> val1;
+
+	// bools
+	val2 = val2 && val3;
+	val2 = val3 && val2;
+	val2 = val2 || val3;
+	val2 = val3 || val2;
+	val2 = !val3;
+	
+	// test in funciton call
+	undeclaredNames(val1);
+	undeclaredNames(inst0.validVar);
+}

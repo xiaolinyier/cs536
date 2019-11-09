@@ -1,0 +1,44 @@
+9:8 ***ERROR*** Multiply declared identifier
+21:6 ***ERROR*** Multiply declared identifier
+22:7 ***ERROR*** Multiply declared identifier
+23:12 ***ERROR*** Multiply declared identifier
+26:5 ***ERROR*** Undeclared identifier
+27:6 ***ERROR*** Invalid struct field name
+30:5 ***ERROR*** Undeclared identifier
+31:6 ***ERROR*** Invalid struct field name
+34:8 ***ERROR*** Undeclared identifier
+35:9 ***ERROR*** Invalid struct field name
+38:10 ***ERROR*** Undeclared identifier
+39:10 ***ERROR*** Invalid struct field name
+42:16 ***ERROR*** Undeclared identifier
+43:9 ***ERROR*** Undeclared identifier
+44:16 ***ERROR*** Undeclared identifier
+45:9 ***ERROR*** Undeclared identifier
+46:16 ***ERROR*** Undeclared identifier
+47:9 ***ERROR*** Undeclared identifier
+48:16 ***ERROR*** Undeclared identifier
+49:9 ***ERROR*** Undeclared identifier
+51:16 ***ERROR*** Undeclared identifier
+52:9 ***ERROR*** Undeclared identifier
+53:16 ***ERROR*** Undeclared identifier
+54:9 ***ERROR*** Undeclared identifier
+55:17 ***ERROR*** Undeclared identifier
+56:9 ***ERROR*** Undeclared identifier
+57:17 ***ERROR*** Undeclared identifier
+58:9 ***ERROR*** Undeclared identifier
+59:17 ***ERROR*** Undeclared identifier
+60:9 ***ERROR*** Undeclared identifier
+61:17 ***ERROR*** Undeclared identifier
+62:9 ***ERROR*** Undeclared identifier
+65:2 ***ERROR*** Undeclared identifier
+66:2 ***ERROR*** Undeclared identifier
+67:10 ***ERROR*** Undeclared identifier
+68:9 ***ERROR*** Undeclared identifier
+71:17 ***ERROR*** Undeclared identifier
+72:9 ***ERROR*** Undeclared identifier
+73:17 ***ERROR*** Undeclared identifier
+74:9 ***ERROR*** Undeclared identifier
+75:10 ***ERROR*** Undeclared identifier
+78:18 ***ERROR*** Undeclared identifier
+79:18 ***ERROR*** Invalid struct field name
+83:6 ***ERROR*** Multiply declared identifier

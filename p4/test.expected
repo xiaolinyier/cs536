@@ -1,0 +1,100 @@
+struct point{
+    int x;
+    int y;
+};
+
+int manhattanDist(int ax, int ay, int bx, int by) {
+    return (((ax(int) - bx(int)) + ay(int)) - by(int));
+}
+
+int main() {
+    struct point a;
+    struct point b;
+    cin >> a(point).x(int);
+    cin >> a(point).y(int);
+    cin >> b(point).x(int);
+    cin >> b(point).y(int);
+}
+
+struct Point{
+    int x;
+    int y;
+};
+
+int f(int x, bool b) {
+}
+
+void g() {
+    int a;
+    bool b;
+    struct Point p;
+    p(Point).x(int) = a(int);
+    b(bool) = (a(int) == 3);
+    f(int,bool->int)((a(int) + (p(Point).y(int) * 2)), b(bool));
+    g(->void)();
+}
+
+struct st{
+    int validVar;
+};
+
+void undeclaredNames() {
+    int val0;
+    int val1;
+    bool val2;
+    bool val3;
+    struct st inst0;
+    bool abc;
+    if (abc(bool)) {
+    }
+    if (inst0(st).validVar(int)) {
+    }
+    if (abc(bool)) {
+    }
+    else {
+    }
+    if (inst0(st).validVar(int)) {
+    }
+    else {
+    }
+    while (abc(bool)) {
+    }
+    while (inst0(st).validVar(int)) {
+    }
+    repeat (abc(bool)) {
+    }
+    repeat (inst0(st).validVar(int)) {
+    }
+    val0(int) = (val0(int) + val1(int));
+    val0(int) = (val1(int) + val0(int));
+    val0(int) = (val0(int) - val1(int));
+    val0(int) = (val1(int) - val0(int));
+    val0(int) = (val0(int) * val1(int));
+    val0(int) = (val1(int) * val0(int));
+    val0(int) = (val0(int) / val1(int));
+    val0(int) = (val1(int) / val0(int));
+    val2(bool) = (val0(int) < val1(int));
+    val2(bool) = (val1(int) < val0(int));
+    val2(bool) = (val0(int) > val1(int));
+    val2(bool) = (val1(int) > val0(int));
+    val2(bool) = (val0(int) <= val1(int));
+    val2(bool) = (val1(int) <= val0(int));
+    val2(bool) = (val0(int) >= val1(int));
+    val2(bool) = (val1(int) >= val0(int));
+    val2(bool) = (val0(int) == val1(int));
+    val2(bool) = (val1(int) == val0(int));
+    val2(bool) = (val0(int) != val1(int));
+    val2(bool) = (val1(int) != val0(int));
+    val1(int)++;
+    val1(int)--;
+    cout << val1(int);
+    cin >> val1(int);
+    val2(bool) = (val2(bool) && val3(bool));
+    val2(bool) = (val3(bool) && val2(bool));
+    val2(bool) = (val2(bool) || val3(bool));
+    val2(bool) = (val3(bool) || val2(bool));
+    val2(bool) = (!val3(bool));
+    undeclaredNames(->void)(val1(int));
+    undeclaredNames(->void)(inst0(st).validVar(int));
+}
+
