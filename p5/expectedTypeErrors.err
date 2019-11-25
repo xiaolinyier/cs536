@@ -1,0 +1,697 @@
+0:0 ***ERROR*** Missing return value
+34:10 ***ERROR*** Return with a value in a void function
+39:10 ***ERROR*** Bad return value
+48:11 ***ERROR*** Attempt to write a function
+51:11 ***ERROR*** Attempt to write a struct name
+54:11 ***ERROR*** Attempt to write a struct variable
+57:11 ***ERROR*** Attempt to write void
+60:10 ***ERROR*** Attempt to read a function
+63:10 ***ERROR*** Attempt to read a struct name
+66:10 ***ERROR*** Attempt to read a struct variable
+69:3 ***ERROR*** Attempt to call a non-function
+70:3 ***ERROR*** Attempt to call a non-function
+71:3 ***ERROR*** Attempt to call a non-function
+74:3 ***ERROR*** Function call with wrong number of args
+75:3 ***ERROR*** Function call with wrong number of args
+76:3 ***ERROR*** Function call with wrong number of args
+79:12 ***ERROR*** Type of actual does not match type of formal
+80:13 ***ERROR*** Type of actual does not match type of formal
+81:18 ***ERROR*** Type of actual does not match type of formal
+81:21 ***ERROR*** Type of actual does not match type of formal
+82:17 ***ERROR*** Type of actual does not match type of formal
+83:20 ***ERROR*** Type of actual does not match type of formal
+84:17 ***ERROR*** Type of actual does not match type of formal
+84:20 ***ERROR*** Type of actual does not match type of formal
+87:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+88:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+89:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+90:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+91:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+92:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+93:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+94:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+96:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+96:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+97:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+97:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+98:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+98:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+99:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+99:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+100:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+100:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+101:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+101:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+102:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+102:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+103:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+103:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+105:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+105:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+106:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+106:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+107:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+107:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+108:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+108:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+109:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+109:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+110:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+110:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+111:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+111:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+112:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+112:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+114:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+115:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+116:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+117:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+118:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+119:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+120:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+121:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+123:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+124:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+125:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+126:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+129:11 ***ERROR*** Relational operator applied to non-numeric operand
+130:11 ***ERROR*** Relational operator applied to non-numeric operand
+131:11 ***ERROR*** Relational operator applied to non-numeric operand
+132:11 ***ERROR*** Relational operator applied to non-numeric operand
+133:12 ***ERROR*** Relational operator applied to non-numeric operand
+134:12 ***ERROR*** Relational operator applied to non-numeric operand
+135:12 ***ERROR*** Relational operator applied to non-numeric operand
+136:12 ***ERROR*** Relational operator applied to non-numeric operand
+138:7 ***ERROR*** Relational operator applied to non-numeric operand
+139:7 ***ERROR*** Relational operator applied to non-numeric operand
+140:7 ***ERROR*** Relational operator applied to non-numeric operand
+141:7 ***ERROR*** Relational operator applied to non-numeric operand
+142:7 ***ERROR*** Relational operator applied to non-numeric operand
+143:7 ***ERROR*** Relational operator applied to non-numeric operand
+144:7 ***ERROR*** Relational operator applied to non-numeric operand
+145:7 ***ERROR*** Relational operator applied to non-numeric operand
+147:7 ***ERROR*** Relational operator applied to non-numeric operand
+147:11 ***ERROR*** Relational operator applied to non-numeric operand
+148:7 ***ERROR*** Relational operator applied to non-numeric operand
+148:11 ***ERROR*** Relational operator applied to non-numeric operand
+149:7 ***ERROR*** Relational operator applied to non-numeric operand
+149:11 ***ERROR*** Relational operator applied to non-numeric operand
+150:7 ***ERROR*** Relational operator applied to non-numeric operand
+150:11 ***ERROR*** Relational operator applied to non-numeric operand
+151:7 ***ERROR*** Relational operator applied to non-numeric operand
+151:12 ***ERROR*** Relational operator applied to non-numeric operand
+152:7 ***ERROR*** Relational operator applied to non-numeric operand
+152:12 ***ERROR*** Relational operator applied to non-numeric operand
+153:7 ***ERROR*** Relational operator applied to non-numeric operand
+153:12 ***ERROR*** Relational operator applied to non-numeric operand
+154:7 ***ERROR*** Relational operator applied to non-numeric operand
+154:12 ***ERROR*** Relational operator applied to non-numeric operand
+156:7 ***ERROR*** Relational operator applied to non-numeric operand
+156:11 ***ERROR*** Relational operator applied to non-numeric operand
+157:7 ***ERROR*** Relational operator applied to non-numeric operand
+157:11 ***ERROR*** Relational operator applied to non-numeric operand
+158:7 ***ERROR*** Relational operator applied to non-numeric operand
+158:11 ***ERROR*** Relational operator applied to non-numeric operand
+159:7 ***ERROR*** Relational operator applied to non-numeric operand
+159:11 ***ERROR*** Relational operator applied to non-numeric operand
+160:7 ***ERROR*** Relational operator applied to non-numeric operand
+160:12 ***ERROR*** Relational operator applied to non-numeric operand
+161:7 ***ERROR*** Relational operator applied to non-numeric operand
+161:12 ***ERROR*** Relational operator applied to non-numeric operand
+162:7 ***ERROR*** Relational operator applied to non-numeric operand
+162:12 ***ERROR*** Relational operator applied to non-numeric operand
+163:7 ***ERROR*** Relational operator applied to non-numeric operand
+163:12 ***ERROR*** Relational operator applied to non-numeric operand
+166:7 ***ERROR*** Logical operator applied to non-bool operand
+167:7 ***ERROR*** Logical operator applied to non-bool operand
+167:12 ***ERROR*** Logical operator applied to non-bool operand
+168:7 ***ERROR*** Logical operator applied to non-bool operand
+168:12 ***ERROR*** Logical operator applied to non-bool operand
+169:7 ***ERROR*** Logical operator applied to non-bool operand
+170:7 ***ERROR*** Logical operator applied to non-bool operand
+170:12 ***ERROR*** Logical operator applied to non-bool operand
+171:7 ***ERROR*** Logical operator applied to non-bool operand
+171:12 ***ERROR*** Logical operator applied to non-bool operand
+173:7 ***ERROR*** Logical operator applied to non-bool operand
+174:7 ***ERROR*** Logical operator applied to non-bool operand
+174:12 ***ERROR*** Logical operator applied to non-bool operand
+175:7 ***ERROR*** Logical operator applied to non-bool operand
+175:12 ***ERROR*** Logical operator applied to non-bool operand
+176:7 ***ERROR*** Logical operator applied to non-bool operand
+177:7 ***ERROR*** Logical operator applied to non-bool operand
+177:12 ***ERROR*** Logical operator applied to non-bool operand
+178:7 ***ERROR*** Logical operator applied to non-bool operand
+178:12 ***ERROR*** Logical operator applied to non-bool operand
+180:8 ***ERROR*** Logical operator applied to non-bool operand
+181:8 ***ERROR*** Logical operator applied to non-bool operand
+184:8 ***ERROR*** Non-bool expression used as an if condition
+185:8 ***ERROR*** Non-bool expression used as an if condition
+188:11 ***ERROR*** Non-bool expression used as a while condition
+189:11 ***ERROR*** Non-bool expression used as a while condition
+192:12 ***ERROR*** Non-integer expression used as a repeat clause
+193:12 ***ERROR*** Non-integer expression used as a repeat clause
+196:7 ***ERROR*** Type mismatch
+197:7 ***ERROR*** Type mismatch
+198:7 ***ERROR*** Type mismatch
+199:7 ***ERROR*** Type mismatch
+200:7 ***ERROR*** Type mismatch
+201:7 ***ERROR*** Type mismatch
+203:7 ***ERROR*** Type mismatch
+204:7 ***ERROR*** Type mismatch
+205:7 ***ERROR*** Type mismatch
+206:7 ***ERROR*** Type mismatch
+207:7 ***ERROR*** Type mismatch
+208:7 ***ERROR*** Type mismatch
+211:7 ***ERROR*** Equality operator applied to void functions
+214:7 ***ERROR*** Equality operator applied to functions
+215:7 ***ERROR*** Equality operator applied to functions
+218:7 ***ERROR*** Equality operator applied to struct names
+219:7 ***ERROR*** Equality operator applied to struct names
+222:7 ***ERROR*** Equality operator applied to struct variables
+223:7 ***ERROR*** Equality operator applied to struct variables
+226:3 ***ERROR*** Function assignment
+229:3 ***ERROR*** Struct name assignment
+232:3 ***ERROR*** Struct variable assignment
+237:11 ***ERROR*** Attempt to write a function
+240:11 ***ERROR*** Attempt to write a struct name
+243:11 ***ERROR*** Attempt to write a struct variable
+246:11 ***ERROR*** Attempt to write void
+249:10 ***ERROR*** Attempt to read a function
+252:10 ***ERROR*** Attempt to read a struct name
+255:10 ***ERROR*** Attempt to read a struct variable
+258:3 ***ERROR*** Attempt to call a non-function
+259:3 ***ERROR*** Attempt to call a non-function
+260:3 ***ERROR*** Attempt to call a non-function
+263:3 ***ERROR*** Function call with wrong number of args
+264:3 ***ERROR*** Function call with wrong number of args
+265:3 ***ERROR*** Function call with wrong number of args
+268:12 ***ERROR*** Type of actual does not match type of formal
+269:13 ***ERROR*** Type of actual does not match type of formal
+270:18 ***ERROR*** Type of actual does not match type of formal
+270:21 ***ERROR*** Type of actual does not match type of formal
+271:17 ***ERROR*** Type of actual does not match type of formal
+272:20 ***ERROR*** Type of actual does not match type of formal
+273:17 ***ERROR*** Type of actual does not match type of formal
+273:20 ***ERROR*** Type of actual does not match type of formal
+276:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+277:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+278:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+279:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+280:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+281:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+282:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+283:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+285:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+285:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+286:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+286:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+287:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+287:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+288:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+288:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+289:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+289:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+290:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+290:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+291:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+291:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+292:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+292:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+294:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+294:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+295:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+295:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+296:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+296:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+297:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+297:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+298:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+298:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+299:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+299:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+300:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+300:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+301:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+301:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+303:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+304:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+305:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+306:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+307:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+308:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+309:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+310:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+312:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+313:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+314:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+315:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+318:11 ***ERROR*** Relational operator applied to non-numeric operand
+319:11 ***ERROR*** Relational operator applied to non-numeric operand
+320:11 ***ERROR*** Relational operator applied to non-numeric operand
+321:11 ***ERROR*** Relational operator applied to non-numeric operand
+322:12 ***ERROR*** Relational operator applied to non-numeric operand
+323:12 ***ERROR*** Relational operator applied to non-numeric operand
+324:12 ***ERROR*** Relational operator applied to non-numeric operand
+325:12 ***ERROR*** Relational operator applied to non-numeric operand
+327:7 ***ERROR*** Relational operator applied to non-numeric operand
+328:7 ***ERROR*** Relational operator applied to non-numeric operand
+329:7 ***ERROR*** Relational operator applied to non-numeric operand
+330:7 ***ERROR*** Relational operator applied to non-numeric operand
+331:7 ***ERROR*** Relational operator applied to non-numeric operand
+332:7 ***ERROR*** Relational operator applied to non-numeric operand
+333:7 ***ERROR*** Relational operator applied to non-numeric operand
+334:7 ***ERROR*** Relational operator applied to non-numeric operand
+336:7 ***ERROR*** Relational operator applied to non-numeric operand
+336:11 ***ERROR*** Relational operator applied to non-numeric operand
+337:7 ***ERROR*** Relational operator applied to non-numeric operand
+337:11 ***ERROR*** Relational operator applied to non-numeric operand
+338:7 ***ERROR*** Relational operator applied to non-numeric operand
+338:11 ***ERROR*** Relational operator applied to non-numeric operand
+339:7 ***ERROR*** Relational operator applied to non-numeric operand
+339:11 ***ERROR*** Relational operator applied to non-numeric operand
+340:7 ***ERROR*** Relational operator applied to non-numeric operand
+340:12 ***ERROR*** Relational operator applied to non-numeric operand
+341:7 ***ERROR*** Relational operator applied to non-numeric operand
+341:12 ***ERROR*** Relational operator applied to non-numeric operand
+342:7 ***ERROR*** Relational operator applied to non-numeric operand
+342:12 ***ERROR*** Relational operator applied to non-numeric operand
+343:7 ***ERROR*** Relational operator applied to non-numeric operand
+343:12 ***ERROR*** Relational operator applied to non-numeric operand
+345:7 ***ERROR*** Relational operator applied to non-numeric operand
+345:11 ***ERROR*** Relational operator applied to non-numeric operand
+346:7 ***ERROR*** Relational operator applied to non-numeric operand
+346:11 ***ERROR*** Relational operator applied to non-numeric operand
+347:7 ***ERROR*** Relational operator applied to non-numeric operand
+347:11 ***ERROR*** Relational operator applied to non-numeric operand
+348:7 ***ERROR*** Relational operator applied to non-numeric operand
+348:11 ***ERROR*** Relational operator applied to non-numeric operand
+349:7 ***ERROR*** Relational operator applied to non-numeric operand
+349:12 ***ERROR*** Relational operator applied to non-numeric operand
+350:7 ***ERROR*** Relational operator applied to non-numeric operand
+350:12 ***ERROR*** Relational operator applied to non-numeric operand
+351:7 ***ERROR*** Relational operator applied to non-numeric operand
+351:12 ***ERROR*** Relational operator applied to non-numeric operand
+352:7 ***ERROR*** Relational operator applied to non-numeric operand
+352:12 ***ERROR*** Relational operator applied to non-numeric operand
+355:7 ***ERROR*** Logical operator applied to non-bool operand
+356:7 ***ERROR*** Logical operator applied to non-bool operand
+356:12 ***ERROR*** Logical operator applied to non-bool operand
+357:7 ***ERROR*** Logical operator applied to non-bool operand
+357:12 ***ERROR*** Logical operator applied to non-bool operand
+358:7 ***ERROR*** Logical operator applied to non-bool operand
+359:7 ***ERROR*** Logical operator applied to non-bool operand
+359:12 ***ERROR*** Logical operator applied to non-bool operand
+360:7 ***ERROR*** Logical operator applied to non-bool operand
+360:12 ***ERROR*** Logical operator applied to non-bool operand
+362:7 ***ERROR*** Logical operator applied to non-bool operand
+363:7 ***ERROR*** Logical operator applied to non-bool operand
+363:12 ***ERROR*** Logical operator applied to non-bool operand
+364:7 ***ERROR*** Logical operator applied to non-bool operand
+364:12 ***ERROR*** Logical operator applied to non-bool operand
+365:7 ***ERROR*** Logical operator applied to non-bool operand
+366:7 ***ERROR*** Logical operator applied to non-bool operand
+366:12 ***ERROR*** Logical operator applied to non-bool operand
+367:7 ***ERROR*** Logical operator applied to non-bool operand
+367:12 ***ERROR*** Logical operator applied to non-bool operand
+369:8 ***ERROR*** Logical operator applied to non-bool operand
+370:8 ***ERROR*** Logical operator applied to non-bool operand
+373:8 ***ERROR*** Non-bool expression used as an if condition
+374:8 ***ERROR*** Non-bool expression used as an if condition
+377:11 ***ERROR*** Non-bool expression used as a while condition
+378:11 ***ERROR*** Non-bool expression used as a while condition
+381:12 ***ERROR*** Non-integer expression used as a repeat clause
+382:12 ***ERROR*** Non-integer expression used as a repeat clause
+385:7 ***ERROR*** Type mismatch
+386:7 ***ERROR*** Type mismatch
+387:7 ***ERROR*** Type mismatch
+388:7 ***ERROR*** Type mismatch
+389:7 ***ERROR*** Type mismatch
+390:7 ***ERROR*** Type mismatch
+392:7 ***ERROR*** Type mismatch
+393:7 ***ERROR*** Type mismatch
+394:7 ***ERROR*** Type mismatch
+395:7 ***ERROR*** Type mismatch
+396:7 ***ERROR*** Type mismatch
+397:7 ***ERROR*** Type mismatch
+400:7 ***ERROR*** Equality operator applied to void functions
+403:7 ***ERROR*** Equality operator applied to functions
+404:7 ***ERROR*** Equality operator applied to functions
+407:7 ***ERROR*** Equality operator applied to struct names
+408:7 ***ERROR*** Equality operator applied to struct names
+411:7 ***ERROR*** Equality operator applied to struct variables
+412:7 ***ERROR*** Equality operator applied to struct variables
+415:3 ***ERROR*** Function assignment
+418:3 ***ERROR*** Struct name assignment
+421:3 ***ERROR*** Struct variable assignment
+427:11 ***ERROR*** Attempt to write a function
+430:11 ***ERROR*** Attempt to write a struct name
+433:11 ***ERROR*** Attempt to write a struct variable
+436:11 ***ERROR*** Attempt to write void
+439:10 ***ERROR*** Attempt to read a function
+442:10 ***ERROR*** Attempt to read a struct name
+445:10 ***ERROR*** Attempt to read a struct variable
+448:3 ***ERROR*** Attempt to call a non-function
+449:3 ***ERROR*** Attempt to call a non-function
+450:3 ***ERROR*** Attempt to call a non-function
+453:3 ***ERROR*** Function call with wrong number of args
+454:3 ***ERROR*** Function call with wrong number of args
+455:3 ***ERROR*** Function call with wrong number of args
+458:12 ***ERROR*** Type of actual does not match type of formal
+459:13 ***ERROR*** Type of actual does not match type of formal
+460:18 ***ERROR*** Type of actual does not match type of formal
+460:21 ***ERROR*** Type of actual does not match type of formal
+461:17 ***ERROR*** Type of actual does not match type of formal
+462:20 ***ERROR*** Type of actual does not match type of formal
+463:17 ***ERROR*** Type of actual does not match type of formal
+463:20 ***ERROR*** Type of actual does not match type of formal
+466:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+467:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+468:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+469:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+470:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+471:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+472:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+473:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+475:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+475:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+476:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+476:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+477:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+477:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+478:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+478:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+479:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+479:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+480:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+480:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+481:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+481:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+482:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+482:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+484:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+484:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+485:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+485:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+486:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+486:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+487:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+487:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+488:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+488:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+489:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+489:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+490:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+490:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+491:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+491:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+493:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+494:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+495:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+496:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+497:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+498:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+499:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+500:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+502:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+503:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+504:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+505:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+508:11 ***ERROR*** Relational operator applied to non-numeric operand
+509:11 ***ERROR*** Relational operator applied to non-numeric operand
+510:11 ***ERROR*** Relational operator applied to non-numeric operand
+511:11 ***ERROR*** Relational operator applied to non-numeric operand
+512:12 ***ERROR*** Relational operator applied to non-numeric operand
+513:12 ***ERROR*** Relational operator applied to non-numeric operand
+514:12 ***ERROR*** Relational operator applied to non-numeric operand
+515:12 ***ERROR*** Relational operator applied to non-numeric operand
+517:7 ***ERROR*** Relational operator applied to non-numeric operand
+518:7 ***ERROR*** Relational operator applied to non-numeric operand
+519:7 ***ERROR*** Relational operator applied to non-numeric operand
+520:7 ***ERROR*** Relational operator applied to non-numeric operand
+521:7 ***ERROR*** Relational operator applied to non-numeric operand
+522:7 ***ERROR*** Relational operator applied to non-numeric operand
+523:7 ***ERROR*** Relational operator applied to non-numeric operand
+524:7 ***ERROR*** Relational operator applied to non-numeric operand
+526:7 ***ERROR*** Relational operator applied to non-numeric operand
+526:11 ***ERROR*** Relational operator applied to non-numeric operand
+527:7 ***ERROR*** Relational operator applied to non-numeric operand
+527:11 ***ERROR*** Relational operator applied to non-numeric operand
+528:7 ***ERROR*** Relational operator applied to non-numeric operand
+528:11 ***ERROR*** Relational operator applied to non-numeric operand
+529:7 ***ERROR*** Relational operator applied to non-numeric operand
+529:11 ***ERROR*** Relational operator applied to non-numeric operand
+530:7 ***ERROR*** Relational operator applied to non-numeric operand
+530:12 ***ERROR*** Relational operator applied to non-numeric operand
+531:7 ***ERROR*** Relational operator applied to non-numeric operand
+531:12 ***ERROR*** Relational operator applied to non-numeric operand
+532:7 ***ERROR*** Relational operator applied to non-numeric operand
+532:12 ***ERROR*** Relational operator applied to non-numeric operand
+533:7 ***ERROR*** Relational operator applied to non-numeric operand
+533:12 ***ERROR*** Relational operator applied to non-numeric operand
+535:7 ***ERROR*** Relational operator applied to non-numeric operand
+535:11 ***ERROR*** Relational operator applied to non-numeric operand
+536:7 ***ERROR*** Relational operator applied to non-numeric operand
+536:11 ***ERROR*** Relational operator applied to non-numeric operand
+537:7 ***ERROR*** Relational operator applied to non-numeric operand
+537:11 ***ERROR*** Relational operator applied to non-numeric operand
+538:7 ***ERROR*** Relational operator applied to non-numeric operand
+538:11 ***ERROR*** Relational operator applied to non-numeric operand
+539:7 ***ERROR*** Relational operator applied to non-numeric operand
+539:12 ***ERROR*** Relational operator applied to non-numeric operand
+540:7 ***ERROR*** Relational operator applied to non-numeric operand
+540:12 ***ERROR*** Relational operator applied to non-numeric operand
+541:7 ***ERROR*** Relational operator applied to non-numeric operand
+541:12 ***ERROR*** Relational operator applied to non-numeric operand
+542:7 ***ERROR*** Relational operator applied to non-numeric operand
+542:12 ***ERROR*** Relational operator applied to non-numeric operand
+545:7 ***ERROR*** Logical operator applied to non-bool operand
+546:7 ***ERROR*** Logical operator applied to non-bool operand
+546:12 ***ERROR*** Logical operator applied to non-bool operand
+547:7 ***ERROR*** Logical operator applied to non-bool operand
+547:12 ***ERROR*** Logical operator applied to non-bool operand
+548:7 ***ERROR*** Logical operator applied to non-bool operand
+549:7 ***ERROR*** Logical operator applied to non-bool operand
+549:12 ***ERROR*** Logical operator applied to non-bool operand
+550:7 ***ERROR*** Logical operator applied to non-bool operand
+550:12 ***ERROR*** Logical operator applied to non-bool operand
+552:7 ***ERROR*** Logical operator applied to non-bool operand
+553:7 ***ERROR*** Logical operator applied to non-bool operand
+553:12 ***ERROR*** Logical operator applied to non-bool operand
+554:7 ***ERROR*** Logical operator applied to non-bool operand
+554:12 ***ERROR*** Logical operator applied to non-bool operand
+555:7 ***ERROR*** Logical operator applied to non-bool operand
+556:7 ***ERROR*** Logical operator applied to non-bool operand
+556:12 ***ERROR*** Logical operator applied to non-bool operand
+557:7 ***ERROR*** Logical operator applied to non-bool operand
+557:12 ***ERROR*** Logical operator applied to non-bool operand
+559:8 ***ERROR*** Logical operator applied to non-bool operand
+560:8 ***ERROR*** Logical operator applied to non-bool operand
+563:8 ***ERROR*** Non-bool expression used as an if condition
+564:8 ***ERROR*** Non-bool expression used as an if condition
+567:11 ***ERROR*** Non-bool expression used as a while condition
+568:11 ***ERROR*** Non-bool expression used as a while condition
+571:12 ***ERROR*** Non-integer expression used as a repeat clause
+572:12 ***ERROR*** Non-integer expression used as a repeat clause
+575:7 ***ERROR*** Type mismatch
+576:7 ***ERROR*** Type mismatch
+577:7 ***ERROR*** Type mismatch
+578:7 ***ERROR*** Type mismatch
+579:7 ***ERROR*** Type mismatch
+580:7 ***ERROR*** Type mismatch
+582:7 ***ERROR*** Type mismatch
+583:7 ***ERROR*** Type mismatch
+584:7 ***ERROR*** Type mismatch
+585:7 ***ERROR*** Type mismatch
+586:7 ***ERROR*** Type mismatch
+587:7 ***ERROR*** Type mismatch
+590:7 ***ERROR*** Equality operator applied to void functions
+593:7 ***ERROR*** Equality operator applied to functions
+594:7 ***ERROR*** Equality operator applied to functions
+597:7 ***ERROR*** Equality operator applied to struct names
+598:7 ***ERROR*** Equality operator applied to struct names
+601:7 ***ERROR*** Equality operator applied to struct variables
+602:7 ***ERROR*** Equality operator applied to struct variables
+605:3 ***ERROR*** Function assignment
+608:3 ***ERROR*** Struct name assignment
+611:3 ***ERROR*** Struct variable assignment
+617:11 ***ERROR*** Attempt to write a function
+620:11 ***ERROR*** Attempt to write a struct name
+623:11 ***ERROR*** Attempt to write a struct variable
+626:11 ***ERROR*** Attempt to write void
+629:10 ***ERROR*** Attempt to read a function
+632:10 ***ERROR*** Attempt to read a struct name
+635:10 ***ERROR*** Attempt to read a struct variable
+638:3 ***ERROR*** Attempt to call a non-function
+639:3 ***ERROR*** Attempt to call a non-function
+640:3 ***ERROR*** Attempt to call a non-function
+643:3 ***ERROR*** Function call with wrong number of args
+644:3 ***ERROR*** Function call with wrong number of args
+645:3 ***ERROR*** Function call with wrong number of args
+648:12 ***ERROR*** Type of actual does not match type of formal
+649:13 ***ERROR*** Type of actual does not match type of formal
+650:18 ***ERROR*** Type of actual does not match type of formal
+650:21 ***ERROR*** Type of actual does not match type of formal
+651:17 ***ERROR*** Type of actual does not match type of formal
+652:20 ***ERROR*** Type of actual does not match type of formal
+653:17 ***ERROR*** Type of actual does not match type of formal
+653:20 ***ERROR*** Type of actual does not match type of formal
+656:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+657:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+658:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+659:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+660:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+661:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+662:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+663:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+665:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+665:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+666:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+666:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+667:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+667:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+668:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+668:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+669:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+669:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+670:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+670:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+671:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+671:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+672:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+672:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+674:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+674:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+675:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+675:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+676:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+676:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+677:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+677:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+678:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+678:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+679:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+679:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+680:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+680:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+681:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+681:11 ***ERROR*** Arithmetic operator applied to non-numeric operand
+683:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+684:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+685:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+686:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+687:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+688:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+689:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+690:7 ***ERROR*** Arithmetic operator applied to non-numeric operand
+692:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+693:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+694:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+695:3 ***ERROR*** Arithmetic operator applied to non-numeric operand
+698:11 ***ERROR*** Relational operator applied to non-numeric operand
+699:11 ***ERROR*** Relational operator applied to non-numeric operand
+700:11 ***ERROR*** Relational operator applied to non-numeric operand
+701:11 ***ERROR*** Relational operator applied to non-numeric operand
+702:12 ***ERROR*** Relational operator applied to non-numeric operand
+703:12 ***ERROR*** Relational operator applied to non-numeric operand
+704:12 ***ERROR*** Relational operator applied to non-numeric operand
+705:12 ***ERROR*** Relational operator applied to non-numeric operand
+707:7 ***ERROR*** Relational operator applied to non-numeric operand
+708:7 ***ERROR*** Relational operator applied to non-numeric operand
+709:7 ***ERROR*** Relational operator applied to non-numeric operand
+710:7 ***ERROR*** Relational operator applied to non-numeric operand
+711:7 ***ERROR*** Relational operator applied to non-numeric operand
+712:7 ***ERROR*** Relational operator applied to non-numeric operand
+713:7 ***ERROR*** Relational operator applied to non-numeric operand
+714:7 ***ERROR*** Relational operator applied to non-numeric operand
+716:7 ***ERROR*** Relational operator applied to non-numeric operand
+716:11 ***ERROR*** Relational operator applied to non-numeric operand
+717:7 ***ERROR*** Relational operator applied to non-numeric operand
+717:11 ***ERROR*** Relational operator applied to non-numeric operand
+718:7 ***ERROR*** Relational operator applied to non-numeric operand
+718:11 ***ERROR*** Relational operator applied to non-numeric operand
+719:7 ***ERROR*** Relational operator applied to non-numeric operand
+719:11 ***ERROR*** Relational operator applied to non-numeric operand
+720:7 ***ERROR*** Relational operator applied to non-numeric operand
+720:12 ***ERROR*** Relational operator applied to non-numeric operand
+721:7 ***ERROR*** Relational operator applied to non-numeric operand
+721:12 ***ERROR*** Relational operator applied to non-numeric operand
+722:7 ***ERROR*** Relational operator applied to non-numeric operand
+722:12 ***ERROR*** Relational operator applied to non-numeric operand
+723:7 ***ERROR*** Relational operator applied to non-numeric operand
+723:12 ***ERROR*** Relational operator applied to non-numeric operand
+725:7 ***ERROR*** Relational operator applied to non-numeric operand
+725:11 ***ERROR*** Relational operator applied to non-numeric operand
+726:7 ***ERROR*** Relational operator applied to non-numeric operand
+726:11 ***ERROR*** Relational operator applied to non-numeric operand
+727:7 ***ERROR*** Relational operator applied to non-numeric operand
+727:11 ***ERROR*** Relational operator applied to non-numeric operand
+728:7 ***ERROR*** Relational operator applied to non-numeric operand
+728:11 ***ERROR*** Relational operator applied to non-numeric operand
+729:7 ***ERROR*** Relational operator applied to non-numeric operand
+729:12 ***ERROR*** Relational operator applied to non-numeric operand
+730:7 ***ERROR*** Relational operator applied to non-numeric operand
+730:12 ***ERROR*** Relational operator applied to non-numeric operand
+731:7 ***ERROR*** Relational operator applied to non-numeric operand
+731:12 ***ERROR*** Relational operator applied to non-numeric operand
+732:7 ***ERROR*** Relational operator applied to non-numeric operand
+732:12 ***ERROR*** Relational operator applied to non-numeric operand
+735:7 ***ERROR*** Logical operator applied to non-bool operand
+736:7 ***ERROR*** Logical operator applied to non-bool operand
+736:12 ***ERROR*** Logical operator applied to non-bool operand
+737:7 ***ERROR*** Logical operator applied to non-bool operand
+737:12 ***ERROR*** Logical operator applied to non-bool operand
+738:7 ***ERROR*** Logical operator applied to non-bool operand
+739:7 ***ERROR*** Logical operator applied to non-bool operand
+739:12 ***ERROR*** Logical operator applied to non-bool operand
+740:7 ***ERROR*** Logical operator applied to non-bool operand
+740:12 ***ERROR*** Logical operator applied to non-bool operand
+742:7 ***ERROR*** Logical operator applied to non-bool operand
+743:7 ***ERROR*** Logical operator applied to non-bool operand
+743:12 ***ERROR*** Logical operator applied to non-bool operand
+744:7 ***ERROR*** Logical operator applied to non-bool operand
+744:12 ***ERROR*** Logical operator applied to non-bool operand
+745:7 ***ERROR*** Logical operator applied to non-bool operand
+746:7 ***ERROR*** Logical operator applied to non-bool operand
+746:12 ***ERROR*** Logical operator applied to non-bool operand
+747:7 ***ERROR*** Logical operator applied to non-bool operand
+747:12 ***ERROR*** Logical operator applied to non-bool operand
+749:8 ***ERROR*** Logical operator applied to non-bool operand
+750:8 ***ERROR*** Logical operator applied to non-bool operand
+753:8 ***ERROR*** Non-bool expression used as an if condition
+754:8 ***ERROR*** Non-bool expression used as an if condition
+757:11 ***ERROR*** Non-bool expression used as a while condition
+758:11 ***ERROR*** Non-bool expression used as a while condition
+761:12 ***ERROR*** Non-integer expression used as a repeat clause
+762:12 ***ERROR*** Non-integer expression used as a repeat clause
+765:7 ***ERROR*** Type mismatch
+766:7 ***ERROR*** Type mismatch
+767:7 ***ERROR*** Type mismatch
+768:7 ***ERROR*** Type mismatch
+769:7 ***ERROR*** Type mismatch
+770:7 ***ERROR*** Type mismatch
+772:7 ***ERROR*** Type mismatch
+773:7 ***ERROR*** Type mismatch
+774:7 ***ERROR*** Type mismatch
+775:7 ***ERROR*** Type mismatch
+776:7 ***ERROR*** Type mismatch
+777:7 ***ERROR*** Type mismatch
+780:7 ***ERROR*** Equality operator applied to void functions
+783:7 ***ERROR*** Equality operator applied to functions
+784:7 ***ERROR*** Equality operator applied to functions
+787:7 ***ERROR*** Equality operator applied to struct names
+788:7 ***ERROR*** Equality operator applied to struct names
+791:7 ***ERROR*** Equality operator applied to struct variables
+792:7 ***ERROR*** Equality operator applied to struct variables
+795:3 ***ERROR*** Function assignment
+798:3 ***ERROR*** Struct name assignment
+801:3 ***ERROR*** Struct variable assignment
+0:0 ***ERROR*** Missing return value
+0:0 ***ERROR*** Missing return value
+0:0 ***ERROR*** Missing return value
+823:10 ***ERROR*** Return with a value in a void function
+826:10 ***ERROR*** Return with a value in a void function
+829:10 ***ERROR*** Return with a value in a void function
+837:10 ***ERROR*** Bad return value
+840:10 ***ERROR*** Bad return value
+843:10 ***ERROR*** Bad return value
+Type checking error

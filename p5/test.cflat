@@ -1,0 +1,239 @@
+int func() {
+  return 0;
+}
+int func_int(int p0) {
+  return 0;
+}
+int func_int_int(int p0, int p1) {
+  return 0;
+}
+int func_bool(bool p0) {
+  return 0;
+}
+int func_bool_bool(bool p0, bool p1) {
+  return 0;
+}
+int func_bool_int(bool p0, int p1) {
+  return 0;
+}
+int func_int_bool(int p0, bool p1) {
+  return 0;
+}
+
+struct P {
+  int value;
+};
+
+void action() {
+  struct P p;
+  int i;
+  bool b;
+  
+  cout << p.value;
+  cout << 1;
+  cout << "abc";
+  cout << b;
+  cout << true;
+  cout << func();
+
+  func();
+  func_int(i);
+  func_bool(b);
+  func_bool_bool(b, b);
+  func_bool_int(b, i);
+  func_int_bool(i, b);
+
+  i = i + i;
+  i = i - i;
+  i = i * i;
+  i = i / i;
+
+  i++;
+  i--;
+
+  b = i < i;
+  b = i > i;
+  b = i <= i;
+  b = i >= i;
+
+  b = b && b;
+  b = b || b;
+
+  b = !b;
+
+  if ( b ) { }
+  while ( b ) { }
+  repeat ( i ) { }
+
+  b = i == i;
+  b = b == b;
+  
+  // do it again in a while loop
+  while(true) {
+  cout << p.value;
+  cout << 1;
+  cout << "abc";
+  cout << b;
+  cout << true;
+  cout << func();
+
+  func();
+  func_int(i);
+  func_bool(b);
+  func_bool_bool(b, b);
+  func_bool_int(b, i);
+  func_int_bool(i, b);
+
+  i = i + i;
+  i = i - i;
+  i = i * i;
+  i = i / i;
+
+  i++;
+  i--;
+
+  b = i < i;
+  b = i > i;
+  b = i <= i;
+  b = i >= i;
+
+  b = b && b;
+  b = b || b;
+
+  b = !b;
+
+  if ( b ) { }
+  while ( b ) { }
+  repeat ( i ) { }
+
+  b = i == i;
+  b = b == b;
+  }
+  
+  //do it again in repeat statement
+  repeat(10) {
+  cout << p.value;
+  cout << 1;
+  cout << "abc";
+  cout << b;
+  cout << true;
+  cout << func();
+
+  func();
+  func_int(i);
+  func_bool(b);
+  func_bool_bool(b, b);
+  func_bool_int(b, i);
+  func_int_bool(i, b);
+
+  i = i + i;
+  i = i - i;
+  i = i * i;
+  i = i / i;
+
+  i++;
+  i--;
+
+  b = i < i;
+  b = i > i;
+  b = i <= i;
+  b = i >= i;
+
+  b = b && b;
+  b = b || b;
+
+  b = !b;
+
+  if ( b ) { }
+  while ( b ) { }
+  repeat ( i ) { }
+
+  b = i == i;
+  b = b == b;
+  }
+  
+  //do it again in if statement
+  if(true) {
+  cout << p.value;
+  cout << 1;
+  cout << "abc";
+  cout << b;
+  cout << true;
+  cout << func();
+
+  func();
+  func_int(i);
+  func_bool(b);
+  func_bool_bool(b, b);
+  func_bool_int(b, i);
+  func_int_bool(i, b);
+
+  i = i + i;
+  i = i - i;
+  i = i * i;
+  i = i / i;
+
+  i++;
+  i--;
+
+  b = i < i;
+  b = i > i;
+  b = i <= i;
+  b = i >= i;
+
+  b = b && b;
+  b = b || b;
+
+  b = !b;
+
+  if ( b ) { }
+  while ( b ) { }
+  repeat ( i ) { }
+
+  b = i == i;
+  b = b == b;
+  }
+}
+
+// check return errors in flow control blocks
+int no_return2() {
+  // Missing return value
+  if(true) {
+  return 0;
+  }
+  while(true) {
+  return 0;
+  }
+  repeat(10) {
+  return 0;
+  }
+  return 0;
+}
+
+void yes_return2() {
+  // Return with a value in a void function
+  if(true) {
+  return;
+  }
+  while(true) {
+  return;
+  }
+  repeat(10) {
+  return;
+  }
+  return;
+}
+
+int bad_return2() {
+  // Bad return value
+  if(true) {
+  return 0;
+  }
+  while(true) {
+  return 0;
+  }
+  repeat(10) {
+  return 0;
+  }
+  return 0;
+}

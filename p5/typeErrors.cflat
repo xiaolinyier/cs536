@@ -1,0 +1,846 @@
+void func() {
+
+}
+void func_int(int p0) {
+
+}
+void func_int_int(int p0, int p1) {
+
+}
+void func_bool(bool p0) {
+
+}
+void func_bool_bool(bool p0, bool p1) {
+
+}
+void func_bool_int(bool p0, int p1) {
+
+}
+void func_int_bool(int p0, bool p1) {
+
+}
+
+struct P {
+  int value;
+};
+
+int no_return() {
+  // Missing return value
+  return;
+}
+
+void yes_return() {
+  // Return with a value in a void function
+  return 5;
+}
+
+int bad_return() {
+  // Bad return value
+  return true;
+}
+
+void action() {
+  struct P p;
+  int i;
+  bool b;
+  
+  // Attempt to write a function
+  cout << func;
+
+  // Attempt to write a struct name
+  cout << P;
+
+  // Attempt to write a struct variable
+  cout << p;
+
+  // Attempt to write void
+  cout << func();
+
+  // Attempt to read a function
+  cin >> func;
+
+  // Attempt to read a struct name
+  cin >> P;
+
+  // Attempt to read a struct variable
+  cin >> p;
+
+  // Attempt to call a non-function (x3)
+  p();
+  i();
+  b();
+
+  // Function call with wrong number of args
+  func(i);
+  func_int();
+  func_int_int(b, b, b);
+
+  // Type of actual does not match type of formal
+  func_int(b);
+  func_bool(i);
+  func_bool_bool(i, i);
+  func_bool_int(i, i);
+  func_int_bool(i, i);
+  func_int_bool(b, i);
+
+  // Arithmetic operator applied to non-numeric operand
+  i = i + b;
+  i = i + p;
+  i = i - b;
+  i = i - p;
+  i = i * b;
+  i = i * p;
+  i = i / b;
+  i = i / p;
+
+  i = b + b;
+  i = b + p;
+  i = b - b;
+  i = b - p;
+  i = b * b;
+  i = b * p;
+  i = b / b;
+  i = b / p;
+
+  i = p + b;
+  i = p + p;
+  i = p - b;
+  i = p - p;
+  i = p * b;
+  i = p * p;
+  i = p / b;
+  i = p / p;
+
+  i = b + i;
+  i = p + i;
+  i = b - i;
+  i = p - i;
+  i = b * i;
+  i = p * i;
+  i = b / i;
+  i = p / i;
+
+  b++;
+  b--;
+  p++;
+  p--;
+
+  // Relational operator applied to non-numeric operand
+  b = i < b;
+  b = i < p;
+  b = i > b;
+  b = i > p;
+  b = i <= b;
+  b = i <= p;
+  b = i >= b;
+  b = i >= p;
+
+  b = b < i;
+  b = p < i;
+  b = b > i;
+  b = p > i;
+  b = b <= i;
+  b = p <= i;
+  b = b >= i;
+  b = p >= i;
+
+  b = b < b;
+  b = b < p;
+  b = b > b;
+  b = b > p;
+  b = b <= b;
+  b = b <= p;
+  b = b >= b;
+  b = b >= p;
+
+  b = p < b;
+  b = p < p;
+  b = p > b;
+  b = p > p;
+  b = p <= b;
+  b = p <= p;
+  b = p >= b;
+  b = p >= p;
+
+  // Logical operator applied to non-bool operand
+  b = i && b;
+  b = i && p;
+  b = i && i;
+  b = i || b;
+  b = i || p;
+  b = i || i;
+
+  b = p && b;
+  b = p && p;
+  b = p && i;
+  b = p || b;
+  b = p || p;
+  b = p || i;
+
+  b = !p;
+  b = !i;
+
+  // Non-bool expression used as an if condition
+  if ( p ) { }
+  if ( i ) { }
+
+  // Non-bool expression used as a while condition
+  while ( p ) { }
+  while ( i ) { }
+
+  // Non-integer expression used as a repeat clause
+  repeat ( p ) { }
+  repeat ( b ) { }
+
+  // Type mismatch
+  b = i == p;
+  b = i == b;
+  b = b == p;
+  b = b == i;
+  b = p == i;
+  b = p == b;
+
+  b = i != p;
+  b = i != b;
+  b = b != p;
+  b = b != i;
+  b = p != i;
+  b = p != b;
+
+  // Equality operator applied to void functions
+  b = func() == func();
+
+  // Equality operator applied to functions
+  b = func == func_int;
+  b = func != func_int;
+  
+  // Equality operator applied to struct names
+  b = P == P;
+  b = P != P;
+
+  // Equality operator applied to struct variables
+  b = p == p;
+  b = p != p;
+
+  // Function assignment
+  func = func_int;
+  
+  // Struct name assignment
+  P = P;
+
+  // Struct variable assignment
+  p = p;
+  
+  // do it again in a while loop
+  while(true) {
+  // Attempt to write a function
+  cout << func;
+
+  // Attempt to write a struct name
+  cout << P;
+
+  // Attempt to write a struct variable
+  cout << p;
+
+  // Attempt to write void
+  cout << func();
+
+  // Attempt to read a function
+  cin >> func;
+
+  // Attempt to read a struct name
+  cin >> P;
+
+  // Attempt to read a struct variable
+  cin >> p;
+
+  // Attempt to call a non-function (x3)
+  p();
+  i();
+  b();
+
+  // Function call with wrong number of args
+  func(i);
+  func_int();
+  func_int_int(b, b, b);
+
+  // Type of actual does not match type of formal
+  func_int(b);
+  func_bool(i);
+  func_bool_bool(i, i);
+  func_bool_int(i, i);
+  func_int_bool(i, i);
+  func_int_bool(b, i);
+
+  // Arithmetic operator applied to non-numeric operand
+  i = i + b;
+  i = i + p;
+  i = i - b;
+  i = i - p;
+  i = i * b;
+  i = i * p;
+  i = i / b;
+  i = i / p;
+
+  i = b + b;
+  i = b + p;
+  i = b - b;
+  i = b - p;
+  i = b * b;
+  i = b * p;
+  i = b / b;
+  i = b / p;
+
+  i = p + b;
+  i = p + p;
+  i = p - b;
+  i = p - p;
+  i = p * b;
+  i = p * p;
+  i = p / b;
+  i = p / p;
+
+  i = b + i;
+  i = p + i;
+  i = b - i;
+  i = p - i;
+  i = b * i;
+  i = p * i;
+  i = b / i;
+  i = p / i;
+
+  b++;
+  b--;
+  p++;
+  p--;
+
+  // Relational operator applied to non-numeric operand
+  b = i < b;
+  b = i < p;
+  b = i > b;
+  b = i > p;
+  b = i <= b;
+  b = i <= p;
+  b = i >= b;
+  b = i >= p;
+
+  b = b < i;
+  b = p < i;
+  b = b > i;
+  b = p > i;
+  b = b <= i;
+  b = p <= i;
+  b = b >= i;
+  b = p >= i;
+
+  b = b < b;
+  b = b < p;
+  b = b > b;
+  b = b > p;
+  b = b <= b;
+  b = b <= p;
+  b = b >= b;
+  b = b >= p;
+
+  b = p < b;
+  b = p < p;
+  b = p > b;
+  b = p > p;
+  b = p <= b;
+  b = p <= p;
+  b = p >= b;
+  b = p >= p;
+
+  // Logical operator applied to non-bool operand
+  b = i && b;
+  b = i && p;
+  b = i && i;
+  b = i || b;
+  b = i || p;
+  b = i || i;
+
+  b = p && b;
+  b = p && p;
+  b = p && i;
+  b = p || b;
+  b = p || p;
+  b = p || i;
+
+  b = !p;
+  b = !i;
+
+  // Non-bool expression used as an if condition
+  if ( p ) { }
+  if ( i ) { }
+
+  // Non-bool expression used as a while condition
+  while ( p ) { }
+  while ( i ) { }
+
+  // Non-integer expression used as a repeat clause
+  repeat ( p ) { }
+  repeat ( b ) { }
+
+  // Type mismatch
+  b = i == p;
+  b = i == b;
+  b = b == p;
+  b = b == i;
+  b = p == i;
+  b = p == b;
+
+  b = i != p;
+  b = i != b;
+  b = b != p;
+  b = b != i;
+  b = p != i;
+  b = p != b;
+
+  // Equality operator applied to void functions
+  b = func() == func();
+
+  // Equality operator applied to functions
+  b = func == func_int;
+  b = func != func_int;
+  
+  // Equality operator applied to struct names
+  b = P == P;
+  b = P != P;
+
+  // Equality operator applied to struct variables
+  b = p == p;
+  b = p != p;
+
+  // Function assignment
+  func = func_int;
+  
+  // Struct name assignment
+  P = P;
+
+  // Struct variable assignment
+  p = p;
+  }
+  
+  //do it again in repeat statement
+  repeat(10) {
+  // Attempt to write a function
+  cout << func;
+
+  // Attempt to write a struct name
+  cout << P;
+
+  // Attempt to write a struct variable
+  cout << p;
+
+  // Attempt to write void
+  cout << func();
+
+  // Attempt to read a function
+  cin >> func;
+
+  // Attempt to read a struct name
+  cin >> P;
+
+  // Attempt to read a struct variable
+  cin >> p;
+
+  // Attempt to call a non-function (x3)
+  p();
+  i();
+  b();
+
+  // Function call with wrong number of args
+  func(i);
+  func_int();
+  func_int_int(b, b, b);
+
+  // Type of actual does not match type of formal
+  func_int(b);
+  func_bool(i);
+  func_bool_bool(i, i);
+  func_bool_int(i, i);
+  func_int_bool(i, i);
+  func_int_bool(b, i);
+
+  // Arithmetic operator applied to non-numeric operand
+  i = i + b;
+  i = i + p;
+  i = i - b;
+  i = i - p;
+  i = i * b;
+  i = i * p;
+  i = i / b;
+  i = i / p;
+
+  i = b + b;
+  i = b + p;
+  i = b - b;
+  i = b - p;
+  i = b * b;
+  i = b * p;
+  i = b / b;
+  i = b / p;
+
+  i = p + b;
+  i = p + p;
+  i = p - b;
+  i = p - p;
+  i = p * b;
+  i = p * p;
+  i = p / b;
+  i = p / p;
+
+  i = b + i;
+  i = p + i;
+  i = b - i;
+  i = p - i;
+  i = b * i;
+  i = p * i;
+  i = b / i;
+  i = p / i;
+
+  b++;
+  b--;
+  p++;
+  p--;
+
+  // Relational operator applied to non-numeric operand
+  b = i < b;
+  b = i < p;
+  b = i > b;
+  b = i > p;
+  b = i <= b;
+  b = i <= p;
+  b = i >= b;
+  b = i >= p;
+
+  b = b < i;
+  b = p < i;
+  b = b > i;
+  b = p > i;
+  b = b <= i;
+  b = p <= i;
+  b = b >= i;
+  b = p >= i;
+
+  b = b < b;
+  b = b < p;
+  b = b > b;
+  b = b > p;
+  b = b <= b;
+  b = b <= p;
+  b = b >= b;
+  b = b >= p;
+
+  b = p < b;
+  b = p < p;
+  b = p > b;
+  b = p > p;
+  b = p <= b;
+  b = p <= p;
+  b = p >= b;
+  b = p >= p;
+
+  // Logical operator applied to non-bool operand
+  b = i && b;
+  b = i && p;
+  b = i && i;
+  b = i || b;
+  b = i || p;
+  b = i || i;
+
+  b = p && b;
+  b = p && p;
+  b = p && i;
+  b = p || b;
+  b = p || p;
+  b = p || i;
+
+  b = !p;
+  b = !i;
+
+  // Non-bool expression used as an if condition
+  if ( p ) { }
+  if ( i ) { }
+
+  // Non-bool expression used as a while condition
+  while ( p ) { }
+  while ( i ) { }
+
+  // Non-integer expression used as a repeat clause
+  repeat ( p ) { }
+  repeat ( b ) { }
+
+  // Type mismatch
+  b = i == p;
+  b = i == b;
+  b = b == p;
+  b = b == i;
+  b = p == i;
+  b = p == b;
+
+  b = i != p;
+  b = i != b;
+  b = b != p;
+  b = b != i;
+  b = p != i;
+  b = p != b;
+
+  // Equality operator applied to void functions
+  b = func() == func();
+
+  // Equality operator applied to functions
+  b = func == func_int;
+  b = func != func_int;
+  
+  // Equality operator applied to struct names
+  b = P == P;
+  b = P != P;
+
+  // Equality operator applied to struct variables
+  b = p == p;
+  b = p != p;
+
+  // Function assignment
+  func = func_int;
+  
+  // Struct name assignment
+  P = P;
+
+  // Struct variable assignment
+  p = p;
+  }
+  
+  //do it again in if statement
+  if(true) {
+  // Attempt to write a function
+  cout << func;
+
+  // Attempt to write a struct name
+  cout << P;
+
+  // Attempt to write a struct variable
+  cout << p;
+
+  // Attempt to write void
+  cout << func();
+
+  // Attempt to read a function
+  cin >> func;
+
+  // Attempt to read a struct name
+  cin >> P;
+
+  // Attempt to read a struct variable
+  cin >> p;
+
+  // Attempt to call a non-function (x3)
+  p();
+  i();
+  b();
+
+  // Function call with wrong number of args
+  func(i);
+  func_int();
+  func_int_int(b, b, b);
+
+  // Type of actual does not match type of formal
+  func_int(b);
+  func_bool(i);
+  func_bool_bool(i, i);
+  func_bool_int(i, i);
+  func_int_bool(i, i);
+  func_int_bool(b, i);
+
+  // Arithmetic operator applied to non-numeric operand
+  i = i + b;
+  i = i + p;
+  i = i - b;
+  i = i - p;
+  i = i * b;
+  i = i * p;
+  i = i / b;
+  i = i / p;
+
+  i = b + b;
+  i = b + p;
+  i = b - b;
+  i = b - p;
+  i = b * b;
+  i = b * p;
+  i = b / b;
+  i = b / p;
+
+  i = p + b;
+  i = p + p;
+  i = p - b;
+  i = p - p;
+  i = p * b;
+  i = p * p;
+  i = p / b;
+  i = p / p;
+
+  i = b + i;
+  i = p + i;
+  i = b - i;
+  i = p - i;
+  i = b * i;
+  i = p * i;
+  i = b / i;
+  i = p / i;
+
+  b++;
+  b--;
+  p++;
+  p--;
+
+  // Relational operator applied to non-numeric operand
+  b = i < b;
+  b = i < p;
+  b = i > b;
+  b = i > p;
+  b = i <= b;
+  b = i <= p;
+  b = i >= b;
+  b = i >= p;
+
+  b = b < i;
+  b = p < i;
+  b = b > i;
+  b = p > i;
+  b = b <= i;
+  b = p <= i;
+  b = b >= i;
+  b = p >= i;
+
+  b = b < b;
+  b = b < p;
+  b = b > b;
+  b = b > p;
+  b = b <= b;
+  b = b <= p;
+  b = b >= b;
+  b = b >= p;
+
+  b = p < b;
+  b = p < p;
+  b = p > b;
+  b = p > p;
+  b = p <= b;
+  b = p <= p;
+  b = p >= b;
+  b = p >= p;
+
+  // Logical operator applied to non-bool operand
+  b = i && b;
+  b = i && p;
+  b = i && i;
+  b = i || b;
+  b = i || p;
+  b = i || i;
+
+  b = p && b;
+  b = p && p;
+  b = p && i;
+  b = p || b;
+  b = p || p;
+  b = p || i;
+
+  b = !p;
+  b = !i;
+
+  // Non-bool expression used as an if condition
+  if ( p ) { }
+  if ( i ) { }
+
+  // Non-bool expression used as a while condition
+  while ( p ) { }
+  while ( i ) { }
+
+  // Non-integer expression used as a repeat clause
+  repeat ( p ) { }
+  repeat ( b ) { }
+
+  // Type mismatch
+  b = i == p;
+  b = i == b;
+  b = b == p;
+  b = b == i;
+  b = p == i;
+  b = p == b;
+
+  b = i != p;
+  b = i != b;
+  b = b != p;
+  b = b != i;
+  b = p != i;
+  b = p != b;
+
+  // Equality operator applied to void functions
+  b = func() == func();
+
+  // Equality operator applied to functions
+  b = func == func_int;
+  b = func != func_int;
+  
+  // Equality operator applied to struct names
+  b = P == P;
+  b = P != P;
+
+  // Equality operator applied to struct variables
+  b = p == p;
+  b = p != p;
+
+  // Function assignment
+  func = func_int;
+  
+  // Struct name assignment
+  P = P;
+
+  // Struct variable assignment
+  p = p;
+  }
+}
+
+// check return errors in flow control blocks
+int no_return2() {
+  // Missing return value
+  if(true) {
+  return;
+  }
+  while(true) {
+  return;
+  }
+  repeat(10) {
+  return;
+  }
+  return 0;
+}
+
+void yes_return2() {
+  // Return with a value in a void function
+  if(true) {
+  return 1;
+  }
+  while(true) {
+  return 1;
+  }
+  repeat(10) {
+  return 1;
+  }
+  return;
+}
+
+int bad_return2() {
+  // Bad return value
+  if(true) {
+  return true;
+  }
+  while(true) {
+  return true;
+  }
+  repeat(10) {
+  return true;
+  }
+  return 0;
+}
