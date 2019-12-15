@@ -1,0 +1,181 @@
+int globalValue;
+
+int readInt() {
+	int res;
+	cin >> res;
+	return res;
+}
+
+void testReading() {
+	int valueRead;
+	cout << "Read in value:\n";
+	valueRead = readInt();
+	cout << "value + 5 = ";
+	cout << valueRead + 5;
+	cout << "\n---it (may have) worked!---\n\n";
+}
+
+bool testReadingBool() {
+	bool globalValue2;
+	cout << "Read in bool (0 / 1):\n";
+	cin >> globalValue2;
+	cout << "---it (may have) worked!---\n\n";
+}
+
+void testPassing(int value, bool value2) {
+	cout << "Testing testPassing:\nint = ";
+	cout << value;
+	cout << ", bool = ";
+	cout << value2;
+	cout << "\n---it (may have) worked!---\n\n";
+}
+
+void testStringComparison() {
+	cout << "Testing string comparison:\n";
+	if("abc" == "def") {
+		cout << "ERRORL: \"abc\" == \"def\"\n";
+	} else {
+		cout << "\"abc\" != \"def\"\n";
+	}
+	if("ghi" == "ghi") {
+		cout << "\"ghi\" == \"ghi\"\n";
+	} else {
+		cout << "ERRORL: \"ghi\" != \"ghi\"\n";
+	}
+	cout << "---it (may have) worked!---\n\n";
+}
+
+bool isZero(int val) {
+	return val == 0;
+}
+
+void testWhileLoop() {
+	int value;
+	cout << "Testing while loop (count from 10...1):\n";
+	value = 10;
+	while(!isZero(value)) {
+		cout << "value = ";
+		cout << value;
+		cout << "\n";
+		value--;
+	}
+	cout << "---it (may have) worked!---\n\n";
+}
+
+void testLogic() {
+	int lesser;
+	int greater;
+	cout << "Testing comparison:\n";
+	lesser = 5;
+	greater = 10;
+	if(lesser > greater) {
+		cout << ">   bad!\n";
+	} else {
+		cout << ">  good!\n";
+	}
+	if(lesser < greater) {
+		cout << "<  good!\n";
+	} else {
+		cout << "<   bad!\n";
+	}
+	if(lesser >= greater) {
+		cout << ">=  bad!\n";
+	} else {
+		cout << ">= good!\n";
+	}
+	if(lesser <= greater) {
+		cout << "<= good!\n";
+	} else {
+		cout << "<=  bad!\n";
+	}
+	if(lesser == greater) {
+		cout << "==  bad!\n";
+	} else {
+		cout << "== good!\n";
+	}
+	if(lesser != greater) {
+		cout << "!= good!\n";
+	} else {
+		cout << "!=  bad!\n";
+	}
+	cout << "---it (may have) worked!---\n\n";
+}
+
+void testArithmatic() {
+	cout << "Testing arithmatic:\n";
+	if((5 * 10) == 50) {
+		cout << "* good!\n";
+	} else {
+		cout << "*  bad!\n";
+	}
+	if((10 / 5) == 2) {
+		cout << "/ good!\n";
+	} else {
+		cout << "/  bad!\n";
+	}
+	if((10 + 5) == 15) {
+		cout << "+ good!\n";
+	} else {
+		cout << "+  bad!\n";
+	}
+	if((10 - 5) == 5) {
+		cout << "- good!\n";
+	} else {
+		cout << "-  bad!\n";
+	}
+	cout << "---it (may have) worked!---\n\n";
+}
+
+void testUnaryOps() {
+	int val;
+	cout << "Testing unary ops:\n";
+	val = 5;
+	val++;
+	if(val == 6) {
+		cout << "++ good!\n";
+	} else {
+		cout << "++  bad!\n";
+	}
+	val = 5;
+	val--;
+	if(val == 4) {
+		cout << "-- good!\n";
+	} else {
+		cout << "--  bad!\n";
+	}
+	cout << "---it (may have) worked!---\n\n";
+}
+
+bool printRetTrue() {
+	cout << "THIS SHOULD NOT PRINT\n";
+	return true;
+}
+
+bool printRetFalse() {
+	cout << "THIS SHOULD NOT PRINT\n";
+	return false;
+}
+
+void testShortCircuit() {
+	cout << "Testing short circuit:\n";
+	if(true || printRetFalse()) {
+		cout << "... short circuit (true || ...)\n";
+	}
+	if(false && printRetFalse()) {
+		cout << "THIS SHOULD NOT PRINT\n";
+	}
+	cout << "---it (may have) worked!---\n\n";
+}
+
+void main() {
+	bool inputBool;
+	testReading();
+	globalValue = 10;
+	inputBool = testReadingBool();
+	testPassing(globalValue, inputBool);
+	testStringComparison();
+	testWhileLoop();
+	testLogic();
+	testUnaryOps();
+	testShortCircuit();
+}

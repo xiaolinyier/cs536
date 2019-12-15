@@ -1,0 +1,48 @@
+Loaded: /u/c/s/cs536-1/public/tools//spim/exceptions.s
+Read in value:
+value + 5 = 55
+---it (may have) worked!---
+
+Read in bool (0 / 1):
+---it (may have) worked!---
+
+Testing testPassing:
+int = 10, bool = 1
+---it (may have) worked!---
+
+Testing string comparison:
+"abc" != "def"
+"ghi" == "ghi"
+---it (may have) worked!---
+
+Testing while loop (count from 10...1):
+value = 10
+value = 9
+value = 8
+value = 7
+value = 6
+value = 5
+value = 4
+value = 3
+value = 2
+value = 1
+---it (may have) worked!---
+
+Testing comparison:
+>  good!
+<  good!
+>= good!
+<= good!
+== good!
+!= good!
+---it (may have) worked!---
+
+Testing unary ops:
+++ good!
+-- good!
+---it (may have) worked!---
+
+Testing short circuit:
+... short circuit (true || ...)
+---it (may have) worked!---
+
